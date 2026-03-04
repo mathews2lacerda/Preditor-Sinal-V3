@@ -98,7 +98,7 @@ model, scaler_x, scaler_y = treinar_modelo()
 if st.button("🔍 Prever Sinal"):
     resultado = prever(distancia, altura, potencia, model, scaler_x, scaler_y)
 
-    st.success(f"📡 Sinal predito: {resultado:.2f} dBm")
+    st.success(f"📡 Sinal predito: **{resultado:.2f} dBm**")
 
 # ---------------------------------
 # RODAPÉ INSTITUCIONAL
