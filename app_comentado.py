@@ -184,12 +184,11 @@ if st.button("🔍 Prever Sinal"):
     # Chama a função de previsão
     resultado = prever(distancia, altura, potencia, model, scaler_x, scaler_y)
 
-    # Mostra o resultado formatado com duas casas decimais
-    st.success(f"📡 Campo previsto: {resultado:.2f} dBm")
-
+    # Mostra o resultado
+    st.success(f"📡 Sinal predito: **{resultado:.2f} dBm**")
 
 # -------------------------------------------------
-# RODAPÉ INSTITUCIONAL
+# RODAPÉ
 # -------------------------------------------------
 
 st.markdown("---")
