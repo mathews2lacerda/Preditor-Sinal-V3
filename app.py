@@ -101,19 +101,22 @@ if st.button("🔍 Prever Sinal"):
     st.success(f"📡 Sinal predito: **{resultado:.2f} dBm**")
 
 # ---------------------------------
-# RODAPÉ INSTITUCIONAL
+# RODAPÉ
 # ---------------------------------
 st.markdown("---")
 
-col_logo, col_texto = st.columns([1, 3])
+col_ifpb, col_texto, col_cnpq = st.columns([1,2,1])
 
-with col_logo:
+with col_ifpb:
     st.image("logo_ifpb.png", width=120)
 
 with col_texto:
     st.markdown(
-        "<div style='font-size: 14px; color: gray; margin-top: 35px;'>"
+        "<div style='text-align:center; font-size:14px; color:gray; margin-top:35px;'>"
         "Projeto viabilizado pelo CNPq, PIBIC e pelo IFPB"
         "</div>",
         unsafe_allow_html=True
     )
+
+with col_cnpq:
+    st.image("logo_cnpq.png", width=120)
