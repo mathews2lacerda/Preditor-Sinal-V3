@@ -105,11 +105,19 @@ if st.button("🔍 Prever Sinal"):
 # ---------------------------------
 st.markdown("---")
 
-col_ifpb, col_texto, col_cnpq = st.columns([1,2,1])
+col_ifpb, col_texto, col_cnpq = st.columns([2,2,1])
 
+# 🔹 Coluna da esquerda (agora com duas logos)
 with col_ifpb:
-    st.image("logo_ifpb.png", width=120)
+    subcol1, subcol2 = st.columns(2)
 
+    with subcol1:
+        st.image("logo_ifpb.png", width=100)
+
+    with subcol2:
+        st.image("logo_gtema.png", width=100)
+
+# 🔹 Texto central
 with col_texto:
     st.markdown(
         "<div style='text-align:center; font-size:14px; color:gray; margin-top:35px;'>"
@@ -118,5 +126,6 @@ with col_texto:
         unsafe_allow_html=True
     )
 
+# 🔹 Logo da direita
 with col_cnpq:
     st.image("logo_cnpq.png", width=120)
