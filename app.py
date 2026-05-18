@@ -115,7 +115,7 @@ with col_ifpb:
         st.image("logo_ifpb.png", width=100)
 
     with subcol2:
-        st.image("logo_gtema.png", width=100)
+        st.image("logo_gtema.jpeg", width=100)
 
 # 🔹 Texto central
 with col_texto:
